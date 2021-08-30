@@ -46,6 +46,7 @@ let package = Package(
         ),
         .package(url: "https://github.com/AliSoftware/OHHTTPStubs.git", from: "9.1.0"),
         .package(
+            name: "TrouterClientIos",
             url: "https://github.com/microsoft/trouter-client-ios.git",
             .exact("0.0.1-beta.4")
         )
