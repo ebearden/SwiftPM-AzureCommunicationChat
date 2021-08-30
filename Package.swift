@@ -46,7 +46,7 @@ let package = Package(
         ),
         .package(url: "https://github.com/AliSoftware/OHHTTPStubs.git", from: "9.1.0"),
         .package(
-            name: "TrouterClientIos",
+            name: "Trouter",
             url: "https://github.com/microsoft/trouter-client-ios.git",
             from: "0.0.1-beta.4"
         )
@@ -55,7 +55,7 @@ let package = Package(
         // Build targets
         .target(
             name: "AzureCommunicationChat",
-            dependencies: ["AzureCore", "AzureCommunicationCommon", "TrouterClientIos"],
+            dependencies: ["AzureCore", "AzureCommunicationCommon", "Trouter"],
             path: "Source",
             exclude: [
                 "README.md",
